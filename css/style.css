@@ -9,8 +9,8 @@ html * {
 /* BASIC SETUP */
 
 .page-wrapper {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .nav-wrapper {
@@ -45,6 +45,9 @@ html * {
   flex-direction: column;
   justify-content: center;
 }
+.form-floating {
+  margin: 10px;
+}
 /*FLEXBOX BODY ITEMS*/
 body {
   overflow: scroll;
@@ -58,15 +61,26 @@ body {
   height: auto;
   background-color: #f1f1f1;
   display: flex;
-  margin: 15px;
+
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  align-items: center;
 }
 .feature-container {
   display: flex;
   justify-content: center;
   flex-basis: 30%;
+}
+.feature-container img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  align-items: center;
+}
+.recipe-video {
+  width: 560px;
+  height: 349px;
 }
 
 .hovereffect {
@@ -78,6 +92,7 @@ body {
   text-align: center;
   cursor: default;
   display: flex;
+  margin: 10px;
 }
 
 .hovereffect .overlay {
@@ -156,6 +171,11 @@ body {
 .hovereffect:hover a.info {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+}
+.img-responsive {
+  width: 350px;
+  height: 500px;
+  margin: 10px;
 }
 /*GRID INDEX*/
 .container {
@@ -302,5 +322,17 @@ body {
   .footer {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 550px) {
+  .recipe-video {
+    width: 460px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .recipe-video {
+    width: 360px;
+    height: 200px;
   }
 }
