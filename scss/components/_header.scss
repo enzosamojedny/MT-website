@@ -1,0 +1,22 @@
+/*HEADER*/
+header {
+  .grad-bar /*GRAD-BAR*/ {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #29109b, #003116, #005777, #000000);
+    background-size: 400% 400%;
+    -webkit-animation: gradbar 15s ease infinite;
+    -moz-animation: gradbar 15s ease infinite;
+    animation: gradbar 15s ease infinite;
+  }
+  nav {
+    a {
+      .navbar-brand-img {
+        width: 65px;
+        height: 45px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

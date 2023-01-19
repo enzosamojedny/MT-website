@@ -1,25 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap");
-
 html * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/* BASIC SETUP */
-
-.page-wrapper {
-  width: 100% !important;
-  height: auto !important;
+body {
+  overflow: scroll;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
-
-.nav-wrapper {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  z-index: 1;
-}
+/*--------------------------------------------------------------------------------- HEADER */
 .grad-bar {
   width: 100%;
   height: 5px;
@@ -29,9 +22,15 @@ html * {
   -moz-animation: gradbar 15s ease infinite;
   animation: gradbar 15s ease infinite;
 }
-/* SECTIONS */
-
+.navbar-brand-img {
+  width: 65px;
+  height: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*--------------------------------------------------------------------------------- MAIN */
 .headline {
+  /*THIS GOES ON MAIN SECTION OF SCSS*/
   width: 100%;
   height: 50vh;
   min-height: 350px;
@@ -45,140 +44,8 @@ html * {
   flex-direction: column;
   justify-content: center;
 }
-.form-floating {
-  margin: 10px;
-}
-/*FLEXBOX BODY ITEMS*/
-body {
-  overflow: scroll;
-  color: #333;
-  font-weight: 300;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-.features {
-  width: 100%;
-  height: auto;
-  background-color: #f1f1f1;
-  display: flex;
-
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.feature-container {
-  display: flex;
-  justify-content: center;
-  flex-basis: 30%;
-}
-.feature-container img {
-  width: 300px;
-  height: 300px;
-  margin: 10px;
-  align-items: center;
-}
-.recipe-video {
-  width: 560px;
-  height: 349px;
-}
-
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  display: flex;
-  margin: 10px;
-}
-
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.hovereffect img {
-  position: relative;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transform: translatey(-100px);
-  -ms-transform: translatey(-100px);
-  transform: translatey(-100px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  padding: 10px;
-}
-
-.hovereffect a.info {
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #fff;
-  background-color: transparent;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  margin: 50px 0 0;
-  padding: 7px 14px;
-}
-
-.hovereffect a.info:hover {
-  box-shadow: 0 0 5px rgb(0, 0, 0);
-}
-
-.hovereffect:hover img {
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.hovereffect:hover .overlay {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.hovereffect:hover h2,
-.hovereffect:hover a.info {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -ms-transform: translatey(0);
-  -webkit-transform: translatey(0);
-  transform: translatey(0);
-}
-
-.hovereffect:hover a.info {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-.img-responsive {
-  width: 350px;
-  height: 500px;
-  margin: 10px;
-}
-/*GRID INDEX*/
-.container {
+/*--------------------------------------------------------------------------------- INDEX*/
+.grid-container {
   width: 60%;
   margin: 2rem auto;
 }
@@ -220,36 +87,179 @@ body {
   overflow-wrap: normal;
   margin-bottom: 30px;
 }
-/* SEARCH FUNCTION */
-
-.no-search {
-  transform: translate(0);
-  transition: transform 0.7s ease-in-out;
+/*-------------------------------------------------------------------------------- PRODUCTS IMAGES, LINKS, EFFECTS*/
+.features {
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
-/* MOBILE MENU & ANIMATION */
-
-.menu-toggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #3f3f3f;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+/*RECIPES GALLERY*/
+.feature-container {
+  display: flex;
+  justify-content: center;
+  flex-basis: 30%;
 }
-
-.menu-toggle {
-  justify-self: end;
-  margin-right: 25px;
-  display: none;
+.feature-container img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  align-items: center;
 }
-
-.menu-toggle:hover {
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  display: flex;
+  margin: 10px;
+}
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.hovereffect img {
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+.hovereffect:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.img-responsive {
+  width: 350px;
+  height: 500px;
+  margin: 10px;
+}
+/*--------------------------------------------------------------------------------- RECIPES*/
+.recipe-video {
+  width: 560px;
+  height: 349px;
+}
+/*--------------------------------------------------------------------------------- CONTACT US */
+.form-floating {
+  margin: 10px;
+}
+/*--------------------------------------------------------------------------------- FOOTER*/
+.wrapper {
+  display: inline-flex;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.wrapper .icon {
+  margin: 0 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
-/* KEYFRAME ANIMATIONS */ /*IMPORTANT!*/
-
+.wrapper .icon span {
+  position: relative;
+  z-index: 2;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i {
+  font-size: 25px;
+  line-height: 60px;
+}
+.wrapper .icon:hover span {
+  color: #fff;
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before {
+  background: #3b5999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before {
+  background: #46c1f6;
+}
+.wrapper .instagram:hover span,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip:before {
+  background: #3f729b;
+}
+.wrapper .youtube:hover span,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip:before {
+  background: #de463b;
+}
+/*--------------------------------------------------------------------------------- KEYFRAME ANIMATIONS */
 @-webkit-keyframes gradbar {
   0% {
     background-position: 0% 50%;
@@ -261,7 +271,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
 @-moz-keyframes gradbar {
   0% {
     background-position: 0% 50%;
@@ -273,7 +282,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
 @keyframes gradbar {
   0% {
     background-position: 0% 50%;
@@ -285,36 +293,7 @@ body {
     background-position: 0% 50%;
   }
 }
-.headline {
-  height: 20vh;
-}
-
-.feature-container p {
-  margin-bottom: 25px;
-}
-
-.feature-container {
-  margin-top: 20px;
-}
-
-.feature-container:nth-child(2) {
-  order: -1;
-}
-.social {
-  width: 5vh;
-}
-.mt-logo {
-  height: 50px;
-  width: auto;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-.footer {
-  height: 50px;
-}
-/* Media Queries */
-
-/* Mobile Devices - Phones/Tablets */
+/*--------------------------------------------------------------------------------- Media Queries */
 @media screen and (max-width: 1260px) {
   .gallery {
     display: block;
