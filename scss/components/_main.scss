@@ -96,7 +96,7 @@ body {
     margin: 50px 50px 5px 0px;
     .hovereffect {
       cursor: default;
-      @extend %config;
+      @include flex(flex, left, hidden, relative, center);
       height: $height0;
       margin: 10px;
       width: $width0;

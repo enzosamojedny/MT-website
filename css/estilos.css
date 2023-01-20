@@ -17,13 +17,6 @@ body {
   display: flex;
   justify-content: center; }
 
-body .features .hovereffect {
-  display: flex;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center; }
-
 /*HEADER*/
 header .grad-bar {
   width: 100%;
@@ -121,6 +114,11 @@ body .features {
   margin: 50px 50px 5px 0px; }
   body .features .hovereffect {
     cursor: default;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
     height: 100%;
     margin: 10px;
     width: 100%; }
