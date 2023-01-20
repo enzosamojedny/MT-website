@@ -13,9 +13,16 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth; }
 
-.headline, .features, .features .feature-container {
+.headline, body .features, .features, .features .feature-container {
   display: flex;
   justify-content: center; }
+
+body .features .hovereffect {
+  display: flex;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
 
 /*HEADER*/
 header .grad-bar {
@@ -53,7 +60,8 @@ body .grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
-    grid-gap: 7px; }
+    grid-gap: 7px;
+    margin: 30px 30px 50px 50px; }
     body .grid-container .gallery figure.gallery__item--1 {
       grid-column-start: 1;
       grid-column-end: 5;
@@ -103,28 +111,24 @@ body .grid-container {
         border: solid black 1px; }
 
 /*-------------------------------------------------------------------------------- PRODUCTS IMAGES, LINKS, EFFECTS*/
-.features {
+body .features {
   width: 100%;
   height: auto;
   background-color: #ffffff;
   gap: 10px;
   flex-wrap: wrap;
-  align-items: center; }
-  .features .hovereffect {
+  align-items: center;
+  margin: 50px 50px 5px 0px; }
+  body .features .hovereffect {
     cursor: default;
-    display: flex;
-    float: left;
     height: 100%;
     margin: 10px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
     width: 100%; }
-    .features .hovereffect .img-responsive {
+    body .features .hovereffect .img-responsive {
       width: 350px;
       height: 500px;
       margin: 10px; }
-    .features .hovereffect .overlay {
+    body .features .hovereffect .overlay {
       -webkit-transition: all 0.4s ease-in-out;
       background-color: rgba(0, 0, 0, 0.5);
       height: 100%;
@@ -135,11 +139,11 @@ body .grid-container {
       top: 0;
       transition: all 0.4s ease-in-out;
       width: 100%; }
-    .features .hovereffect img {
+    body .features .hovereffect img {
       -webkit-transition: all 0.4s linear;
       position: relative;
       transition: all 0.4s linear; }
-    .features .hovereffect h2 {
+    body .features .hovereffect h2 {
       -ms-transform: translatey(-100px);
       -webkit-transform: translatey(-100px);
       -webkit-transition: all 0.2s ease-in-out;
@@ -152,7 +156,7 @@ body .grid-container {
       text-transform: uppercase;
       transform: translatey(-100px);
       transition: all 0.2s ease-in-out; }
-    .features .hovereffect a.info {
+    body .features .hovereffect a.info {
       -webkit-transition: all 0.2s ease-in-out;
       background-color: transparent;
       border: 1px solid #ffffff;
@@ -165,22 +169,22 @@ body .grid-container {
       text-decoration: none;
       text-transform: uppercase;
       transition: all 0.2s ease-in-out; }
-      .features .hovereffect a.info:hover {
+      body .features .hovereffect a.info:hover {
         box-shadow: 0 0 5px black; }
-    .features .hovereffect:hover img {
+    body .features .hovereffect:hover img {
       -ms-transform: scale(1.2);
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
-    .features .hovereffect:hover .overlay {
+    body .features .hovereffect:hover .overlay {
       filter: alpha(opacity=100);
       opacity: 1; }
-    .features .hovereffect:hover h2 {
+    body .features .hovereffect:hover h2 {
       -ms-transform: translatey(0);
       -webkit-transform: translatey(0);
       filter: alpha(opacity=100);
       opacity: 1;
       transform: translatey(0); }
-    .features .hovereffect:hover a.info {
+    body .features .hovereffect:hover a.info {
       -ms-transform: translatey(0);
       -webkit-transform: translatey(0);
       -webkit-transition-delay: 0.2s;
@@ -203,14 +207,17 @@ body .grid-container {
       width: 300px;
       height: 300px;
       margin: 10px;
-      align-items: center; }
+      align-items: center;
+      margin: 50px 50px 50px 50px; }
   .features .video-wrapper .recipe-video {
     width: 560px;
-    height: 349px; }
+    height: 349px;
+    margin-bottom: 50px;
+    margin-top: 30px; }
 
 /*--------------------------------------------------------------------------------- CONTACT US */
 .form-floating {
-  margin: 10px; }
+  margin: 20px 50px 20px 50px; }
 
 /*--------------------------------------------------------------------------------- FOOTER*/
 section .grad-bar {

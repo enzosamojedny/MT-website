@@ -22,6 +22,7 @@ body {
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(8, 5vw);
       grid-gap: 7px;
+      margin: 30px 30px 50px 50px;
       figure.gallery__item--1 {
         grid-column-start: 1;
         grid-column-end: 5;
@@ -83,107 +84,105 @@ body {
 }
 
 /*-------------------------------------------------------------------------------- PRODUCTS IMAGES, LINKS, EFFECTS*/
-.features {
-  @extend %flxbx;
-  width: $width0;
-  height: auto;
-  background-color: $color0;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-  .hovereffect {
-    cursor: default;
-    display: flex;
-    float: left;
-    height: $height0;
-    margin: 10px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
+body {
+  .features {
+    @extend %flxbx;
     width: $width0;
-    .img-responsive {
-      width: 350px;
-      height: 500px;
-      margin: 10px;
-    }
-    .overlay {
-      -webkit-transition: all 0.4s ease-in-out;
-      background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    background-color: $color0;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 50px 5px 0px;
+    .hovereffect {
+      cursor: default;
+      @extend %config;
       height: $height0;
-      left: 0;
-      opacity: 0;
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      transition: all 0.4s ease-in-out;
+      margin: 10px;
       width: $width0;
-    }
-    img {
-      -webkit-transition: all 0.4s linear;
-      position: relative;
-      transition: all 0.4s linear;
-    }
-    h2 {
-      -ms-transform: translatey(-100px);
-      -webkit-transform: translatey(-100px);
-      -webkit-transition: all 0.2s ease-in-out;
-      background: rgba(0, 0, 0, 0.6);
-      color: $color0;
-      font-size: 17px;
-      padding: 10px;
-      position: relative;
-      text-align: center;
-      text-transform: uppercase;
-      transform: translatey(-100px);
-      transition: all 0.2s ease-in-out;
-    }
-    a.info {
-      -webkit-transition: all 0.2s ease-in-out;
-      background-color: transparent;
-      border: 1px solid $color0;
-      color: $color0;
-      display: inline-block;
-      filter: alpha(opacity=0);
-      margin: 50px 0 0;
-      opacity: 0;
-      padding: 7px 14px;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: all 0.2s ease-in-out;
-      &:hover {
-        box-shadow: 0 0 5px rgb(0, 0, 0);
-      }
-    }
-    &:hover {
-      img {
-        -ms-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+      .img-responsive {
+        width: 350px;
+        height: 500px;
+        margin: 10px;
       }
       .overlay {
-        filter: alpha(opacity=100);
-        opacity: 1;
+        -webkit-transition: all 0.4s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: $height0;
+        left: 0;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        transition: all 0.4s ease-in-out;
+        width: $width0;
+      }
+      img {
+        -webkit-transition: all 0.4s linear;
+        position: relative;
+        transition: all 0.4s linear;
       }
       h2 {
-        -ms-transform: translatey(0);
-        -webkit-transform: translatey(0);
-        filter: alpha(opacity=100);
-        opacity: 1;
-        transform: translatey(0);
+        -ms-transform: translatey(-100px);
+        -webkit-transform: translatey(-100px);
+        -webkit-transition: all 0.2s ease-in-out;
+        background: rgba(0, 0, 0, 0.6);
+        color: $color0;
+        font-size: 17px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        transform: translatey(-100px);
+        transition: all 0.2s ease-in-out;
       }
       a.info {
-        -ms-transform: translatey(0);
-        -webkit-transform: translatey(0);
-        -webkit-transition-delay: 0.2s;
-        filter: alpha(opacity=100);
-        opacity: 1;
-        transform: translatey(0);
-        transition-delay: 0.2s;
+        -webkit-transition: all 0.2s ease-in-out;
+        background-color: transparent;
+        border: 1px solid $color0;
+        color: $color0;
+        display: inline-block;
+        filter: alpha(opacity=0);
+        margin: 50px 0 0;
+        opacity: 0;
+        padding: 7px 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          box-shadow: 0 0 5px rgb(0, 0, 0);
+        }
+      }
+      &:hover {
+        img {
+          -ms-transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+        .overlay {
+          filter: alpha(opacity=100);
+          opacity: 1;
+        }
+        h2 {
+          -ms-transform: translatey(0);
+          -webkit-transform: translatey(0);
+          filter: alpha(opacity=100);
+          opacity: 1;
+          transform: translatey(0);
+        }
+        a.info {
+          -ms-transform: translatey(0);
+          -webkit-transform: translatey(0);
+          -webkit-transition-delay: 0.2s;
+          filter: alpha(opacity=100);
+          opacity: 1;
+          transform: translatey(0);
+          transition-delay: 0.2s;
+        }
       }
     }
   }
 }
-
 /*--------------------------------------------------------------------------------- RECIPES*/
 .features {
   width: $width0;
@@ -201,16 +200,19 @@ body {
       height: 300px;
       margin: 10px;
       align-items: center;
+      margin: 50px 50px 50px 50px;
     }
   }
   .video-wrapper {
     .recipe-video {
       width: 560px;
       height: 349px;
+      margin-bottom: 50px;
+      margin-top: 30px;
     }
   }
 }
 /*--------------------------------------------------------------------------------- CONTACT US */
 .form-floating {
-  margin: 10px;
+  margin: 20px 50px 20px 50px;
 }
