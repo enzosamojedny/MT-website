@@ -9,3 +9,10 @@ $color0: #ffffff;
   display: flex;
   justify-content: center;
 }
+%config {
+  display: flex;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
