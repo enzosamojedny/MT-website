@@ -212,6 +212,42 @@ body {
     }
   }
 }
+/*--------------------------------------------------------------------------------- OUR COMPANY*/
+body {
+  .h1-whole-website {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000000;
+  }
+  .hr-web {
+    width: 75%;
+    margin: auto;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .h1-p {
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-weight: 400;
+  }
+  ul {
+    .h1-li {
+      text-align: left;
+      margin-left: 30px;
+      margin-right: 20px;
+      font-weight: 400;
+      list-style: black circle;
+    }
+  }
+  .row {
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+  }
+}
 /*--------------------------------------------------------------------------------- CONTACT US */
 .form-floating {
   margin: 20px 50px 20px 50px;
