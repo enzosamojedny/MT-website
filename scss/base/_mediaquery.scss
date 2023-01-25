@@ -3,6 +3,34 @@
     display: block;
   }
 }
+@media screen and (max-width: 880px) {
+  body.recipes aside ul .li-aside {
+    line-height: 2;
+  }
+  body.recipes aside .recipes-img-container {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 810px) {
+  body.recipes aside ul .li-aside {
+    line-height: normal;
+  }
+  body.recipes aside .recipes-img-container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  body.recipes aside {
+    display: block;
+  }
+  body.recipes aside .recipes-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 550px) {
   .features .video-wrapper .recipe-video {
     width: 460px;

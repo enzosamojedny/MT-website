@@ -100,10 +100,13 @@ body {
       height: $height0;
       margin: 10px;
       width: $width0;
+      border-radius: 2%;
       .img-responsive {
         width: 350px;
-        height: 500px;
-        margin: 10px;
+        height: 450px;
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 2%;
       }
       .overlay {
         -webkit-transition: all 0.4s ease-in-out;
@@ -113,7 +116,7 @@ body {
         opacity: 0;
         overflow: hidden;
         position: absolute;
-        top: 0;
+        top: 0%;
         transition: all 0.4s ease-in-out;
         width: $width0;
       }
@@ -135,6 +138,7 @@ body {
         text-transform: uppercase;
         transform: translatey(-100px);
         transition: all 0.2s ease-in-out;
+        top: 3%;
       }
       a.info {
         -webkit-transition: all 0.2s ease-in-out;
@@ -150,7 +154,7 @@ body {
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
         &:hover {
-          box-shadow: 0 0 5px rgb(0, 0, 0);
+          box-shadow: 0 0 10px rgb(255, 255, 255);
         }
       }
       &:hover {
@@ -161,7 +165,7 @@ body {
         }
         .overlay {
           filter: alpha(opacity=100);
-          opacity: 1;
+          opacity: 0.9;
         }
         h2 {
           -ms-transform: translatey(0);
@@ -184,6 +188,70 @@ body {
   }
 }
 /*--------------------------------------------------------------------------------- RECIPES*/
+body.recipes {
+  .h1-whole-website {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000000;
+  }
+  .hr-web {
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+  .h1-p {
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: 500;
+  }
+
+  ul {
+    .li-r {
+      margin-top: 15px;
+      text-align: left;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-weight: 400;
+      line-height: 2;
+    }
+  }
+  aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .h2-recipes {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      text-align: left;
+      color: #000000;
+      flex-wrap: nowrap;
+    }
+    ul {
+      .li-aside {
+        margin-left: 50px;
+        line-height: 3;
+        padding-left: 5px;
+      }
+    }
+    .recipes-img-container {
+      display: flex;
+      align-items: right;
+      justify-content: right;
+      margin-right: 50px;
+      margin-left: 50px;
+      .image-aside {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
 .features {
   width: $width0;
   height: auto;
@@ -195,13 +263,6 @@ body {
   .feature-container {
     @extend %flxbx;
     flex-basis: 30%;
-    img {
-      width: 300px;
-      height: 300px;
-      margin: 10px;
-      align-items: center;
-      margin: 50px 50px 50px 50px;
-    }
   }
   .video-wrapper {
     .recipe-video {
@@ -239,16 +300,25 @@ body {
       margin-right: 20px;
       font-weight: 400;
       list-style: black circle;
+      line-height: 2;
+      .span {
+        font-weight: bolder;
+      }
     }
   }
-  .row {
-    margin-top: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 40px;
-  }
 }
+.row {
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 40px;
+}
+
 /*--------------------------------------------------------------------------------- CONTACT US */
 .form-floating {
-  margin: 20px 50px 20px 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  input {
+    margin-bottom: 10px;
+  }
 }
