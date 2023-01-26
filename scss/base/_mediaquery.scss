@@ -16,11 +16,28 @@
 }
 @media screen and (max-width: 1050px) {
   body .grid-container .gallery {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 50px;
+    align-items: center;
   }
+  body .grid-container .gallery .gallery__img {
+    min-width: 400px;
+  }
+
   body .grid-container .gallery-text {
     text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  body .grid-container .gallery .gallery__img {
+    min-width: 350px;
+  }
+}
+@media screen and (max-width: 390px) {
+  body .grid-container .gallery .gallery__img {
+    min-width: 320px;
   }
 }
 /*RECIPES*/
