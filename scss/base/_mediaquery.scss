@@ -1,3 +1,4 @@
+/*INDEX*/
 @media screen and (max-width: 1520px) {
   body .grid-container .gallery-text {
     line-height: 1;
@@ -22,6 +23,7 @@
     text-align: center;
   }
 }
+/*RECIPES*/
 @media screen and (max-width: 880px) {
   body.recipes aside ul .li-aside {
     line-height: 2;
@@ -62,6 +64,7 @@
     height: 200px;
   }
 }
+/*FOOTER*/
 @media screen and (max-width: 460px) {
   footer {
     display: flex;
