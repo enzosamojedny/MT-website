@@ -28,17 +28,11 @@ body {
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 5;
-        .gallery-text {
-          font-family: "poppins", sans-serif, serif;
-          line-height: 1.3;
-          font-weight: 300;
-          margin: 3px;
-        }
         .gallery__img {
           width: $width0;
           height: $height0;
           object-fit: cover;
-          border: groove rgb(0, 0, 0) 3px;
+          border: double rgb(0, 0, 0) 3px;
           border-radius: 2%;
         }
       }
@@ -50,14 +44,14 @@ body {
         .gallery-text {
           font-family: "poppins", sans-serif, serif;
           line-height: 1.3;
-          font-weight: 300;
+          font-weight: 400;
           margin: 3px;
         }
         .gallery__img {
           width: $width0;
           height: $height0;
           object-fit: cover;
-          border: groove black 3px;
+          border: double rgb(0, 0, 0) 3px;
           border-radius: 2%;
         }
       }
@@ -71,14 +65,14 @@ body {
         .gallery-text {
           font-family: "poppins", sans-serif, serif;
           line-height: 1.3;
-          font-weight: 300;
+          font-weight: 400;
           margin: 3px;
         }
         .gallery__img {
           width: $width0;
           height: $height0;
           object-fit: cover;
-          border: groove black 3px;
+          border: double rgb(0, 0, 0) 3px;
           border-radius: 2%;
         }
       }
