@@ -437,3 +437,10 @@ section footer .wrapper .youtube:hover .tooltip:before {
   .features .video-wrapper .recipe-video {
     width: 360px;
     height: 200px; } }
+
+@media screen and (max-width: 460px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column; } }
