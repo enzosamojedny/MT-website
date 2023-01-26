@@ -95,7 +95,6 @@ body {
       cursor: default;
       @include flex(flex, left, hidden, relative, center);
       height: $height0;
-      margin: 10px;
       width: $width0;
       border-radius: 2%;
       .img-responsive {
