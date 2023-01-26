@@ -117,6 +117,7 @@ body .features {
     position: relative;
     text-align: center;
     height: 100%;
+    margin: 10px;
     width: 100%;
     border-radius: 2%; }
     body .features .hovereffect .img-responsive {
@@ -161,7 +162,7 @@ body .features {
       color: #ffffff;
       display: inline-block;
       filter: alpha(opacity=0);
-      margin: 50px 0 0;
+      margin: 20px 0 0;
       opacity: 0;
       padding: 7px 14px;
       text-decoration: none;
