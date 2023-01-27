@@ -333,7 +333,7 @@ section footer .wrapper {
       height: 60px;
       width: 60px;
       display: block;
-      background: white;
+      background: #fff;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       text-align: center;
@@ -343,6 +343,8 @@ section footer .wrapper {
         section footer .wrapper .icon span a i {
           font-size: 25px;
           line-height: 60px; }
+          section footer .wrapper .icon span a i:hover {
+            color: #fff; }
 
 section footer .wrapper .facebook:hover span,
 section footer .wrapper .facebook:hover .tooltip,
