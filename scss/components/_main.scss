@@ -22,7 +22,7 @@ body {
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(8, 5vw);
       grid-gap: 10px;
-      margin: 70px 30px 100px 50px;
+      margin: 70px 30px 100px 30px;
       figure.gallery__item--1 {
         grid-column-start: 1;
         grid-column-end: 5;
