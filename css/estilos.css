@@ -333,16 +333,16 @@ section footer .wrapper {
       height: 60px;
       width: 60px;
       display: block;
-      background: #fff;
+      background: white;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
       border-radius: 50%;
       text-align: center;
       transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-      section footer .wrapper .icon span i {
-        font-size: 25px;
-        line-height: 60px; }
-        section footer .wrapper .icon span i:hover {
-          color: #fff; }
+      section footer .wrapper .icon span a {
+        color: #000000; }
+        section footer .wrapper .icon span a i {
+          font-size: 25px;
+          line-height: 60px; }
 
 section footer .wrapper .facebook:hover span,
 section footer .wrapper .facebook:hover .tooltip,
