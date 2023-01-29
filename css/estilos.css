@@ -393,15 +393,15 @@ section footer .wrapper .youtube:hover .tooltip:before {
 
 /*INDEX*/
 @media screen and (max-width: 1520px) {
-  body .grid-container .gallery-text {
+  body main .grid-container .gallery-text {
     line-height: 1; } }
 
 @media screen and (max-width: 1400px) {
-  body .grid-container .gallery {
+  body main .grid-container .gallery {
     margin-bottom: 150px; } }
 
 @media screen and (max-width: 1250px) {
-  body .grid-container .gallery {
+  body main .grid-container .gallery {
     margin-bottom: 200px; } }
 
 @media screen and (max-width: 1050px) {
