@@ -1,27 +1,46 @@
+/*INDEX*/
 @media screen and (max-width: 1520px) {
-  body .grid-container .gallery-text {
+  body main .grid-container .gallery-text {
     line-height: 1;
   }
 }
 @media screen and (max-width: 1400px) {
-  body .grid-container .gallery {
+  body main .grid-container .gallery {
     margin-bottom: 150px;
   }
 }
 @media screen and (max-width: 1250px) {
-  body .grid-container .gallery {
+  body main .grid-container .gallery {
     margin-bottom: 200px;
   }
 }
 @media screen and (max-width: 1050px) {
-  body .grid-container .gallery {
-    display: block;
+  body main .grid-container .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 50px;
+    align-items: center;
   }
-  body .grid-container .gallery-text {
+  body main .grid-container .gallery .gallery__img {
+    min-width: 400px;
+  }
+
+  body main .grid-container .gallery-text {
     text-align: center;
   }
 }
+@media screen and (max-width: 450px) {
+  body main .grid-container .gallery .gallery__img {
+    min-width: 350px;
+  }
+}
+@media screen and (max-width: 390px) {
+  body main .grid-container .gallery .gallery__img {
+    min-width: 320px;
+  }
+}
+/*RECIPES*/
 @media screen and (max-width: 880px) {
   body.recipes aside ul .li-aside {
     line-height: 2;
@@ -60,5 +79,28 @@
   .features .video-wrapper .recipe-video {
     width: 360px;
     height: 200px;
+  }
+}
+/*FOOTER*/
+@media screen and (max-width: 460px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+/*HEADER*/
+@media screen and (max-width: 990px) {
+  header {
+    nav {
+      section {
+        ul {
+          ul.dropdown-menu {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }

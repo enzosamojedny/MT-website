@@ -15,7 +15,7 @@ section {
       color: #000000;
       margin-bottom: 15px;
       .icon {
-        margin: 0 20px;
+        margin: 0 10px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -34,11 +34,14 @@ section {
           border-radius: 50%;
           text-align: center;
           transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-          i {
-            font-size: 25px;
-            line-height: 60px;
-            &:hover {
-              color: #fff;
+          a {
+            color: #000000;
+            i {
+              font-size: 25px;
+              line-height: 60px;
+              &:hover {
+                color: #fff;
+              }
             }
           }
         }
@@ -49,10 +52,10 @@ section {
     .wrapper .facebook:hover .tooltip:before {
       background: #3b5999;
     }
-    .wrapper .twitter:hover span,
-    .wrapper .twitter:hover .tooltip,
-    .wrapper .twitter:hover .tooltip:before {
-      background: #46c1f6;
+    .wrapper .whatsapp:hover span,
+    .wrapper .whatsapp:hover .tooltip,
+    .wrapper .whatsapp:hover .tooltip:before {
+      background: #3a8d21;
     }
     .wrapper .instagram:hover span,
     .wrapper .instagram:hover .tooltip,
