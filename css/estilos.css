@@ -351,10 +351,10 @@ section footer .wrapper .facebook:hover .tooltip,
 section footer .wrapper .facebook:hover .tooltip:before {
   background: #3b5999; }
 
-section footer .wrapper .twitter:hover span,
-section footer .wrapper .twitter:hover .tooltip,
-section footer .wrapper .twitter:hover .tooltip:before {
-  background: #46c1f6; }
+section footer .wrapper .whatsapp:hover span,
+section footer .wrapper .whatsapp:hover .tooltip,
+section footer .wrapper .whatsapp:hover .tooltip:before {
+  background: #3a8d21; }
 
 section footer .wrapper .instagram:hover span,
 section footer .wrapper .instagram:hover .tooltip,
