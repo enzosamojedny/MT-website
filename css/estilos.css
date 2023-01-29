@@ -464,3 +464,8 @@ section footer .wrapper .youtube:hover .tooltip:before {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column; } }
+
+/*HEADER*/
+@media screen and (max-width: 990px) {
+  header nav section ul ul.dropdown-menu {
+    text-align: center; } }
