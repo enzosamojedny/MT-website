@@ -7,7 +7,6 @@ html * {
 
 body {
   overflow: scroll;
-  color: #333;
   font-weight: 300;
   line-height: 1.6;
   scroll-behavior: smooth; }
@@ -45,66 +44,70 @@ header nav a .navbar-brand-img {
   flex-direction: column; }
 
 /*--------------------------------------------------------------------------------- INDEX*/
-body main .grid-container {
-  width: 60%;
-  margin: 2rem auto; }
-  body main .grid-container .gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 10px;
-    margin: 70px 30px 100px 30px; }
-    body main .grid-container .gallery figure.gallery__item--1 {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 5; }
-      body main .grid-container .gallery figure.gallery__item--1 .gallery__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: double black 3px;
-        border-radius: 2%; }
-    body main .grid-container .gallery figure.gallery__item--3 {
-      grid-column-start: 5;
-      grid-column-end: 10;
-      grid-row-start: 1;
-      grid-row-end: 6; }
-      body main .grid-container .gallery figure.gallery__item--3 .gallery-text {
-        font-family: "poppins", sans-serif, serif;
-        line-height: 1.3;
-        font-weight: 400;
-        margin: 3px; }
-      body main .grid-container .gallery figure.gallery__item--3 .gallery__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: double black 3px;
-        border-radius: 2%; }
-    body main .grid-container .gallery figure.gallery__item--6 {
-      grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 5;
-      grid-row-end: 8;
-      overflow-wrap: normal;
-      margin-bottom: 30px; }
-      body main .grid-container .gallery figure.gallery__item--6 .gallery-text {
-        font-family: "poppins", sans-serif, serif;
-        line-height: 1.3;
-        font-weight: 400;
-        margin: 3px; }
-      body main .grid-container .gallery figure.gallery__item--6 .gallery__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: double black 3px;
-        border-radius: 2%; }
+body {
+  background: url("/img/My-project-3.png");
+  background-repeat: repeat;
+  background-size: cover; }
+  body main .grid-container {
+    width: 60%;
+    margin: 2rem auto; }
+    body main .grid-container .gallery {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 5vw);
+      grid-gap: 10px;
+      margin: 70px 30px 100px 30px; }
+      body main .grid-container .gallery figure.gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5; }
+        body main .grid-container .gallery figure.gallery__item--1 .gallery__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: double black 3px;
+          border-radius: 2%; }
+      body main .grid-container .gallery figure.gallery__item--3 {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 6; }
+        body main .grid-container .gallery figure.gallery__item--3 .gallery-text {
+          font-family: "poppins", sans-serif, serif;
+          line-height: 1.3;
+          font-weight: 400;
+          margin: 3px; }
+        body main .grid-container .gallery figure.gallery__item--3 .gallery__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: double black 3px;
+          border-radius: 2%; }
+      body main .grid-container .gallery figure.gallery__item--6 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 8;
+        overflow-wrap: normal;
+        margin-bottom: 30px; }
+        body main .grid-container .gallery figure.gallery__item--6 .gallery-text {
+          font-family: "poppins", sans-serif, serif;
+          line-height: 1.3;
+          font-weight: 400;
+          margin: 3px; }
+        body main .grid-container .gallery figure.gallery__item--6 .gallery__img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: double black 3px;
+          border-radius: 2%; }
 
 /*-------------------------------------------------------------------------------- PRODUCTS IMAGES, LINKS, EFFECTS*/
 body .features {
   width: 100%;
   height: auto;
-  background-color: #ffffff;
+  background-color: transparent;
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
@@ -301,8 +304,13 @@ body main ul .h1-li {
 body main .form-floating {
   margin-left: 30px;
   margin-right: 30px; }
+  body main .form-floating .form-select {
+    background-color: #f2f5ee; }
+  body main .form-floating .form-control {
+    background-color: #f2f5ee; }
   body main .form-floating input {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    background-color: #f2f5ee; }
 
 /*--------------------------------------------------------------------------------- FOOTER*/
 section .grad-bar {
@@ -314,57 +322,56 @@ section .grad-bar {
   -moz-animation: gradbar 15s ease infinite;
   animation: gradbar 15s ease infinite; }
 
-section footer .wrapper {
-  display: inline-flex;
-  color: #000000;
-  margin-bottom: 15px; }
-  section footer .wrapper .icon {
-    margin: 0 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2; }
-    section footer .wrapper .icon span {
+section footer {
+  text-align: center;
+  color: white; }
+  section footer .wrapper {
+    display: inline-flex;
+    color: #000000;
+    margin-bottom: 15px; }
+    section footer .wrapper .icon {
+      margin: 0 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       position: relative;
-      z-index: 2;
-      height: 60px;
-      width: 60px;
-      display: block;
-      background: #fff;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 50%;
-      text-align: center;
-      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-      section footer .wrapper .icon span a {
-        color: #000000; }
-        section footer .wrapper .icon span a i {
-          font-size: 25px;
-          line-height: 60px; }
-          section footer .wrapper .icon span a i:hover {
-            color: #fff; }
-
-section footer .wrapper .facebook:hover span,
-section footer .wrapper .facebook:hover .tooltip,
-section footer .wrapper .facebook:hover .tooltip:before {
-  background: #3b5999; }
-
-section footer .wrapper .whatsapp:hover span,
-section footer .wrapper .whatsapp:hover .tooltip,
-section footer .wrapper .whatsapp:hover .tooltip:before {
-  background: #3a8d21; }
-
-section footer .wrapper .instagram:hover span,
-section footer .wrapper .instagram:hover .tooltip,
-section footer .wrapper .instagram:hover .tooltip:before {
-  background: #b63183; }
-
-section footer .wrapper .youtube:hover span,
-section footer .wrapper .youtube:hover .tooltip,
-section footer .wrapper .youtube:hover .tooltip:before {
-  background: #de463b; }
+      z-index: 2; }
+      section footer .wrapper .icon span {
+        position: relative;
+        z-index: 2;
+        height: 60px;
+        width: 60px;
+        display: block;
+        background: #fff;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+        section footer .wrapper .icon span a {
+          color: #000000; }
+          section footer .wrapper .icon span a i {
+            font-size: 25px;
+            line-height: 60px; }
+            section footer .wrapper .icon span a i:hover {
+              color: #fff; }
+  section footer .wrapper .facebook:hover span,
+  section footer .wrapper .facebook:hover .tooltip,
+  section footer .wrapper .facebook:hover .tooltip:before {
+    background: #3b5999; }
+  section footer .wrapper .whatsapp:hover span,
+  section footer .wrapper .whatsapp:hover .tooltip,
+  section footer .wrapper .whatsapp:hover .tooltip:before {
+    background: #3a8d21; }
+  section footer .wrapper .instagram:hover span,
+  section footer .wrapper .instagram:hover .tooltip,
+  section footer .wrapper .instagram:hover .tooltip:before {
+    background: #b63183; }
+  section footer .wrapper .youtube:hover span,
+  section footer .wrapper .youtube:hover .tooltip,
+  section footer .wrapper .youtube:hover .tooltip:before {
+    background: #de463b; }
 
 /*--------------------------------------------------------------------------------- KEYFRAME ANIMATIONS */
 @-webkit-keyframes gradbar {
