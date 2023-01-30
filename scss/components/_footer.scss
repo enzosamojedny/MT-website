@@ -10,6 +10,8 @@ section {
     animation: gradbar 15s ease infinite;
   }
   footer {
+    text-align: center;
+    color: white;
     .wrapper {
       display: inline-flex;
       color: #000000;
@@ -47,6 +49,7 @@ section {
         }
       }
     }
+
     .wrapper .facebook:hover span,
     .wrapper .facebook:hover .tooltip,
     .wrapper .facebook:hover .tooltip:before {
