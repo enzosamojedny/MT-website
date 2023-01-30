@@ -45,7 +45,7 @@ header nav a .navbar-brand-img {
 
 /*--------------------------------------------------------------------------------- INDEX*/
 body {
-  background: url("/img/My-project-3.png");
+  background: url("../img/My-project-3.png");
   background-repeat: repeat;
   background-size: cover; }
   body main .grid-container {
