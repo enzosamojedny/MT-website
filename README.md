@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [Mate Tostado website](https://github.com/enzosamojedny/MT-website)
 
-- 🌱 I’m currently learning **JS**
+- 🌱 I’m currently learning **JS and Tailwind CSS**
 
 - 📫 How to reach me **enzosamojedny@gmail.com**
 
